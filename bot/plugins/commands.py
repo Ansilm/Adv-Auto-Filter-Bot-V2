@@ -104,3 +104,6 @@ async def about(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+@Bot.on_message(filters.private & filter.command(["link"])
+async def command(bot, update) :
+       update.reply("https://t.me/joinchat/vSkvkbHjQjc2MjFl")
